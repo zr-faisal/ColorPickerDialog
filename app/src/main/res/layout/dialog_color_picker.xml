@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:padding="@dimen/activity_vertical_margin"
+    android:id="@+id/tableLayoutDialog">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RED" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarRed"
+            android:tag="1"
+            android:minHeight="32dp"
+            android:maxHeight="32dp"
+            android:max="255" />
+
+        <EditText
+            android:id="@+id/editTextRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:minEms="2"
+            android:text="0"
+            android:tag="1"
+            android:inputType="numberSigned"
+            android:imeOptions="actionDone" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GREEN" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarGreen"
+            android:tag="2"
+            android:minHeight="32dp"
+            android:maxHeight="32dp"
+            android:max="255" />
+
+        <EditText
+            android:id="@+id/editTextGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:minEms="2"
+            android:text="0"
+            android:tag="2"
+            android:inputType="numberSigned"
+            android:imeOptions="actionDone" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLUE" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarBlue"
+            android:tag="3"
+            android:minHeight="32dp"
+            android:maxHeight="32dp"
+            android:max="255" />
+
+        <EditText
+            android:id="@+id/editTextBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:minEms="2"
+            android:text="0"
+            android:tag="3"
+            android:inputType="numberSigned"
+            android:imeOptions="actionDone" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALPHA" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarAlpha"
+            android:progress="255"
+            android:tag="4"
+            android:max="255" />
+
+        <EditText
+            android:id="@+id/editTextAlpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:minEms="2"
+            android:text="255"
+            android:tag="4"
+            android:inputType="numberSigned"
+            android:imeOptions="actionDone" />
+    </TableRow>
+
+</TableLayout>
